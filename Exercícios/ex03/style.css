@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#base {
+  width: 100%;
+  margin: auto;
+}
+
+#home {
+  width: 1120px;
+  margin: 88px auto 0;
+}
+
+.subtittle {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e1624f;
+}
+
+h1 {
+  color: #1b1b1b;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+img {
+  border-radius: 28px;
+}
+
+.description-center {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  font-style: italic;
+}
+
+#list {
+  width: 1120px;
+  margin: auto;
+}
+
+.divisor {
+  height: 1px;
+  width: 100%;
+  margin: 40px auto 40px;
+  background-color: #d9d9d9;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.description-tittle {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 64px;
+}
+
+.recomendation + .recomendation {
+  margin-top: 48px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+.azul {
+  color: #0c51a7;
+}
+
+.roxo {
+  color: #591b98;
+}
+
+.rosa {
+  color: #e5245e;
+}
+
+.laranja {
+  color: #e95e10;
+}
+
+.txt-list {
+  font-weight: bold;
+}
+
+.description-recomendation {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.txt-center {
+  text-align: center;
+  color: #333333;
+}
+
+footer {
+  margin: 65px auto 48px;
+  text-align: center;
+}
+
+.icon {
+  vertical-align: middle;
+}
