@@ -1,50 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-    --red: #E3646E;
-    --purple: #BB72E9;
-    --blue: #3996DB;
-    --green: #82BC4F;
-    --yellow: #EABD5F;
+  --red: #e3646e;
+  --purple: #bb72e9;
+  --blue: #3996db;
+  --green: #82bc4f;
+  --yellow: #eabd5f;
 
-    --gray-100: #0D0E11;
-    --gray-200: #16181D;
-    --gray-300: #292C34;
-    --gray-400: #878EA1;
-    --gray-500: #C0C4CE;
-    --gray-600: #E2E4E9;
+  --gray-100: #0d0e11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
 
-    --title-font-family: "Asap", sans-serif;
-    --h1: bold 56px/120% var(--title-font-family);
-    --h2: bold 24px/120% var(--title-font-family);
-    --h3: bold 16px/120% var(--title-font-family);
+  --title-font-family: "Asap", sans-serif;
+  --h1: bold 56px/120% var(--title-font-family);
+  --h2: bold 24px/120% var(--title-font-family);
+  --h3: bold 16px/120% var(--title-font-family);
 
-    --sub-font-family: "Inconsolata", monospace;
-    --sub: 400 20px/120% var(--sub-font-family);
+  --sub-font-family: "Inconsolata", monospace;
+  --sub: 400 20px/120% var(--sub-font-family);
 
-    --text-font-family: "Maven Pro", sans-serif;
-    --text-md: 400 16px/140% var(--text-font-family);
-    --text-sm: 400 14px/140% var(--text-font-family);
+  --text-font-family: "Maven Pro", sans-serif;
+  --text-md: 400 16px/140% var(--text-font-family);
+  --text-sm: 400 14px/140% var(--text-font-family);
+}
+
+body {
+  background-color: var(--gray-200);
+  color: var(--gray-600);
+}
+
+.red {
+  color: var(--red);
 }
 
 h1 {
-    font: var(--h1);
+  font: var(--h1);
 }
 
 h2 {
-    font: var(--h2);
+  font: var(--h2);
 }
 
 h3 {
-    font: var(--h3);
+  font: var(--h3);
 }
 
 .sub {
-    font: var(--sub);
+  font: var(--sub);
 }
 
 .md {
-    font: var(--text-md);
+  font: var(--text-md);
 }
 
 .sm {
-    font: var(--text-sm);
+  font: var(--text-sm);
+}
+
+.container {
+  max-width: 1040px;
+  margin-inline: auto;
+}
+
+span {
+  color: var(--red);
+}
+
+.auto {
+  display: flex;
+  margin: auto;
 }

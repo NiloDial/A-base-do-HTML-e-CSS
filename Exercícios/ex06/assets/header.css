@@ -1,0 +1,54 @@
+#home {
+  padding: 120px 0 57px;
+}
+
+.bg-home {
+  background-image: url(./image/Background_Intro.png);
+  background-size: cover;
+}
+
+.avatar {
+  display: flex;
+  padding-bottom: 56px;
+  margin: auto;
+}
+
+header div {
+  max-width: 680px;
+  margin: auto;
+  text-align: center;
+}
+
+header {
+  margin: auto;
+  padding-bottom: 94px;
+}
+
+header .sm {
+  color: var(--gray-400);
+}
+
+header .sub {
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--gray-300);
+  border-radius: 50px;
+  padding: 8px 16px;
+}
+
+.tag-content {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
