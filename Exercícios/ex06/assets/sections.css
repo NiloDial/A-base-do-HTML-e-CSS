@@ -1,0 +1,43 @@
+#works {
+  text-align: center;
+  padding: 72px 0 144px;
+
+  p {
+    padding-bottom: 8px;
+  }
+
+  .tittle {
+    padding-bottom: 56px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    background-color: var(--gray-300);
+    text-align: left;
+    padding: 12px;
+    border-radius: 12px;
+
+    img {
+      width: 306px;
+      height: 156px;
+      border-radius: 8px;
+    }
+  }
+
+  .card-txt {
+    padding: 4px;
+
+    h3 {
+      padding-bottom: 8px;
+    }
+
+    p {
+      padding: 0px;
+    }
+  }
+}
