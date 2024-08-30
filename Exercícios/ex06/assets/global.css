@@ -36,8 +36,24 @@ body {
   color: var(--gray-600);
 }
 
+.card-txt {
+  padding: 4px;
+
+  h3 {
+    padding-bottom: 8px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
 .red {
   color: var(--red);
+}
+
+.purple {
+  color: var(--purple);
 }
 
 h1 {
@@ -76,4 +92,18 @@ span {
 .auto {
   display: flex;
   margin: auto;
+}
+
+.tittle {
+  padding-bottom: 56px;
+  text-align: center;
+
+  p {
+    padding-bottom: 8px;
+  }
+
+  .md {
+    padding: 8px 0 0;
+    color: var(--gray-500);
+  }
 }

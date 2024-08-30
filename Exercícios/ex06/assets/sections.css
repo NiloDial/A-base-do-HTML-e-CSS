@@ -1,14 +1,5 @@
 #works {
-  text-align: center;
   padding: 72px 0 144px;
-
-  p {
-    padding-bottom: 8px;
-  }
-
-  .tittle {
-    padding-bottom: 56px;
-  }
 
   .grid {
     display: grid;
@@ -21,6 +12,12 @@
     text-align: left;
     padding: 12px;
     border-radius: 12px;
+    cursor: pointer;
+    border: 1.5px solid var(--gray-300);
+
+    p {
+      padding: 0;
+    }
 
     img {
       width: 306px;
@@ -29,15 +26,87 @@
     }
   }
 
-  .card-txt {
-    padding: 4px;
+  .card:hover {
+    border: 1.5px solid var(--gray-400);
+  }
+}
 
-    h3 {
-      padding-bottom: 8px;
+#service {
+  padding: 88px 0 120px;
+  background-color: var(--gray-100);
+
+  .card-service {
+    border-radius: 12px;
+    border: 2px solid var(--gray-200);
+    text-align: left;
+    padding: 20px;
+
+    img {
+      margin-bottom: 20px;
     }
 
     p {
-      padding: 0px;
+      padding-bottom: 0;
     }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+.bg {
+  background-image: url(./image/Background_Contacts.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#contact {
+  padding: 120px 0 200px;
+
+  .tittle {
+    padding-bottom: 48px;
+  }
+
+  .md {
+    color: var(--gray-500);
+  }
+
+  .link {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    padding: 20px;
+    max-width: 400px;
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    border: 1.5px solid var(--gray-300);
+
+    div:nth-child(1) {
+      display: flex;
+      align-items: center;
+
+      p {
+        padding-left: 12px;
+      }
+    }
+  }
+
+  .link:hover {
+    border: 1.5px solid var(--blue);
+
+    path {
+      fill: var(--blue);
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
