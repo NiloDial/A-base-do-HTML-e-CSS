@@ -17,15 +17,62 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <title>Festivite</title>
   </head>
+
   <body>
-    <h1>Teste</h1>
-    <h2>Teste</h2>
-    <p class="mdl">Teste</p>
-    <p class="md">Teste</p>
-    <p class="sm">Teste</p>
-    <p class="xs">Teste</p>
-    <p class="mds">Teste</p>
-    <p class="sms">Teste</p>
-    <p class="xss">Teste</p>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="./styles/assets/icons/Logo-icon.svg" alt="ícone logo" />
+            <img src="./styles/assets/icons/Logo-text.svg" alt="ícone texto" />
+            <p class="mdl">Crie um convite digital para o seu evento.</p>
+          </header>
+        </div>
+      </aside>
+
+      <main>
+        <div class="main-container">
+          <h1>Crie seu convite</h1>
+
+          <form>
+            <div class="head">
+              <img
+                src="./styles/assets/icons/calendar.svg"
+                alt="ícone calendário"
+              />
+              <h2>Sobre o evento</h2>
+            </div>
+
+            <fieldset class="init">
+              <div class="input-wrapper">
+                <label for="name">Título</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="tittle"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="flex gap-16">
+                <div class="input-wrapper flex-1">
+                  <label for="date-init">Início</label>
+                  <input
+                    type="datetime-local"
+                    id="date-init"
+                    name="date-init"
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="date-end">Fim</label>
+                  <input type="datetime-local" id="date-end" name="date-end" />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

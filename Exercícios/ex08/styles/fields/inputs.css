@@ -1,0 +1,28 @@
+input {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+  font: var(--md);
+  color: var(--input-placeholder);
+  background-color: var(--input-base);
+}
+
+input:focus {
+  border: 1px solid var(--brand-light);
+}
+
+input[type="datetime-local"] {
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
+
+label {
+  font: var(--sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 0.75rem;
+}

@@ -62,16 +62,20 @@
 body {
   font: var(--sm);
   color: var(--text-body);
+  background-color: var(--shape-background);
+  overflow: hidden;
 }
 
 /*Heading 01*/
 h1 {
   font: var(--h1);
+  color: var(--text-heading);
 }
 
 /*Heading 02*/
 h2 {
   font: var(--h2);
+  color: var(--text-heading);
 }
 
 /*Text light 16px*/
@@ -107,4 +111,16 @@ h2 {
 /*Text semibold 12px*/
 .xss {
   font: var(--xss);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.gap-16 {
+  gap: 1rem;
 }

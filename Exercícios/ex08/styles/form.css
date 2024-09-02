@@ -1,0 +1,20 @@
+@import url(./fields/index.css);
+
+form {
+  .head {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
