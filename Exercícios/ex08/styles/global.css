@@ -124,3 +124,18 @@ h2 {
 .gap-16 {
   gap: 1rem;
 }
+
+/*Espaçamento de 40px*/
+.pb-40 {
+  padding-bottom: 2.5rem;
+}
+
+/*Espaçamento de 48px*/
+.pb-48 {
+  padding-bottom: 3rem;
+}
+
+/*Espaçamento de 28px*/
+.pb-28 {
+  padding-bottom: 1.75rem;
+}

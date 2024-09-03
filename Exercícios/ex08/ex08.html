@@ -33,7 +33,7 @@
       <main>
         <div class="main-container">
           <h1>Crie seu convite</h1>
-
+          <div class="pb-40"></div>
           <form>
             <div class="head">
               <img
@@ -67,6 +67,301 @@
                 <div class="input-wrapper flex-1">
                   <label for="date-end">Fim</label>
                   <input type="datetime-local" id="date-end" name="date-end" />
+                </div>
+              </div>
+
+              <div class="flex gap-16">
+                <div class="flex-1">
+                  <label for="Presencial">Tipo</label>
+                  <div class="segmented-control">
+                    <input
+                      type="radio"
+                      name="segment"
+                      id="Presencial"
+                      checked
+                    />
+                    <label for="Presencial">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_4115_30)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M5.33337 1.83331C5.11236 1.83331 4.9004 1.92111 4.74412 2.07739C4.58784 2.23367 4.50004 2.44563 4.50004 2.66665V14.1666H11.5V2.66665C11.5 2.44563 11.4122 2.23367 11.256 2.07739C11.0997 1.92111 10.8877 1.83331 10.6667 1.83331H5.33337ZM12.5 5.49998V2.66665C12.5 2.18042 12.3069 1.7141 11.9631 1.37028C11.6193 1.02647 11.1529 0.833313 10.6667 0.833313H5.33337C4.84714 0.833313 4.38083 1.02647 4.03701 1.37028C3.69319 1.7141 3.50004 2.18042 3.50004 2.66665V7.49998H2.66671C2.18048 7.49998 1.71416 7.69313 1.37034 8.03695C1.02653 8.38077 0.833374 8.84708 0.833374 9.33331V13.3333C0.833374 13.8195 1.02653 14.2859 1.37034 14.6297C1.71416 14.9735 2.18048 15.1666 2.66671 15.1666H13.3334C13.8196 15.1666 14.2859 14.9735 14.6297 14.6297C14.9736 14.2859 15.1667 13.8195 15.1667 13.3333V7.33331C15.1667 6.84708 14.9736 6.38077 14.6297 6.03695C14.2859 5.69313 13.8196 5.49998 13.3334 5.49998H12.5ZM12.5 6.49998V14.1666H13.3334C13.5544 14.1666 13.7663 14.0788 13.9226 13.9226C14.0789 13.7663 14.1667 13.5543 14.1667 13.3333V7.33331C14.1667 7.1123 14.0789 6.90034 13.9226 6.74406C13.7663 6.58778 13.5544 6.49998 13.3334 6.49998H12.5ZM3.50004 8.49998H2.66671C2.44569 8.49998 2.23373 8.58778 2.07745 8.74406C1.92117 8.90034 1.83337 9.1123 1.83337 9.33331V13.3333C1.83337 13.5543 1.92117 13.7663 2.07745 13.9226C2.23373 14.0788 2.44569 14.1666 2.66671 14.1666H3.50004V8.49998ZM6.16671 3.99998C6.16671 3.72384 6.39056 3.49998 6.66671 3.49998H9.33337C9.60952 3.49998 9.83337 3.72384 9.83337 3.99998C9.83337 4.27612 9.60952 4.49998 9.33337 4.49998H6.66671C6.39056 4.49998 6.16671 4.27612 6.16671 3.99998ZM6.16671 6.66665C6.16671 6.3905 6.39056 6.16665 6.66671 6.16665H9.33337C9.60952 6.16665 9.83337 6.3905 9.83337 6.66665C9.83337 6.94279 9.60952 7.16665 9.33337 7.16665H6.66671C6.39056 7.16665 6.16671 6.94279 6.16671 6.66665ZM6.16671 9.33331C6.16671 9.05717 6.39056 8.83331 6.66671 8.83331H9.33337C9.60952 8.83331 9.83337 9.05717 9.83337 9.33331C9.83337 9.60945 9.60952 9.83331 9.33337 9.83331H6.66671C6.39056 9.83331 6.16671 9.60945 6.16671 9.33331ZM6.16671 12C6.16671 11.7238 6.39056 11.5 6.66671 11.5H9.33337C9.60952 11.5 9.83337 11.7238 9.83337 12C9.83337 12.2761 9.60952 12.5 9.33337 12.5H6.66671C6.39056 12.5 6.16671 12.2761 6.16671 12Z"
+                            fill="#59B2FF"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_4115_30">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      Presencial
+                    </label>
+
+                    <input type="radio" name="segment" id="Online" />
+                    <label for="Online">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.66671 4.5C2.20647 4.5 1.83337 4.8731 1.83337 5.33333V10.6667C1.83337 11.1269 2.20647 11.5 2.66671 11.5H9.33337C9.79361 11.5 10.1667 11.1269 10.1667 10.6667V8.6735C10.1666 8.66864 10.1666 8.66378 10.1667 8.65892V7.00949C10.1666 7.00347 10.1666 6.99746 10.1667 6.99145V5.33333C10.1667 4.8731 9.79361 4.5 9.33337 4.5H2.66671ZM11.1667 6.12939V5.33333C11.1667 4.32081 10.3459 3.5 9.33337 3.5H2.66671C1.65419 3.5 0.833374 4.32081 0.833374 5.33333V10.6667C0.833374 11.6792 1.65419 12.5 2.66671 12.5H9.33337C10.3459 12.5 11.1667 11.6792 11.1667 10.6667V9.60093L13.8717 11.4043C13.9972 11.4878 14.143 11.5357 14.2936 11.5429C14.4441 11.5501 14.5938 11.5163 14.7267 11.4452C14.8596 11.374 14.9707 11.2682 15.0482 11.1389C15.1257 11.0096 15.1666 10.8617 15.1667 10.7109V5.24681C15.1667 5.24677 15.1667 5.24686 15.1667 5.24681C15.1667 5.10024 15.1281 4.9561 15.0547 4.82923C14.9812 4.70231 14.8756 4.59702 14.7485 4.52398C14.6213 4.45094 14.4772 4.41274 14.3305 4.41324C14.1839 4.41374 14.04 4.45291 13.9134 4.52681L11.1667 6.12939ZM11.1667 7.28715V8.39908L14.1667 10.3991V5.53677L11.1667 7.28715Z"
+                          fill="#869198"
+                        />
+                      </svg>
+
+                      Online
+                    </label>
+                  </div>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="local">Local</label>
+                  <input
+                    type="text"
+                    id="local"
+                    name="local"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="txtarea">Descrição</label>
+                <textarea
+                  name="descrição"
+                  id="txtarea"
+                  cols="30"
+                  rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <div class="pb-48"></div>
+            <div class="head">
+              <img
+                src="./styles/assets/icons/paintbrush-vertical.svg"
+                alt="ícone de um pincel"
+              />
+              <h2>Personalização</h2>
+            </div>
+
+            <fieldset class="style">
+              <div class="radio-color-wrapper">
+                <legend>Cor principal</legend>
+
+                <div class="radio-colors">
+                  <input
+                    class="color"
+                    type="radio"
+                    name="colors"
+                    id="color1"
+                    checked
+                  />
+                  <label for="color1" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color2" />
+                  <label for="color2" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color3" />
+                  <label for="color3" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color4" />
+                  <label for="color4" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color5" />
+                  <label for="color5" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color6" />
+                  <label for="color6" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color7" />
+                  <label for="color7" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color8" />
+                  <label for="color8" class="color-circle"></label>
+
+                  <input class="color" type="radio" name="colors" id="color9" />
+                  <label for="color9" class="color-circle"></label>
+
+                  <input
+                    class="color"
+                    type="radio"
+                    name="colors"
+                    id="color10"
+                  />
+                  <label for="color10" class="color-circle"></label>
+
+                  <input
+                    class="color"
+                    type="radio"
+                    name="colors"
+                    id="color11"
+                  />
+                  <label for="color11" class="color-circle"></label>
+                </div>
+              </div>
+
+              <div class="teme-wrapper">
+                <legend>Tema do evento</legend>
+
+                <div class="radio-teme">
+                  <input type="radio" name="teme" id="teme1" checked />
+                  <label for="teme1" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-01.jpg"
+                      alt="Imagem card Aniversário"
+                    />
+                    Aniversário
+                  </label>
+
+                  <input type="radio" name="teme" id="teme2" />
+                  <label for="teme2" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-02.jpg"
+                      alt="Imagem card Infantil"
+                    />
+                    Infantil
+                  </label>
+
+                  <input type="radio" name="teme" id="teme3" />
+                  <label for="teme3" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-03.jpg"
+                      alt="Imagem card Formatura"
+                    />
+                    Formatura
+                  </label>
+
+                  <input type="radio" name="teme" id="teme4" />
+                  <label for="teme4" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-04.jpg"
+                      alt="Imagem card Casamento"
+                    />
+                    Casamento
+                  </label>
+
+                  <input type="radio" name="teme" id="teme5" />
+                  <label for="teme5" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-05.jpg"
+                      alt="Imagem card Chá de bebê"
+                    />
+                    Chá de bebê
+                  </label>
+
+                  <input type="radio" name="teme" id="teme6" />
+                  <label for="teme6" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-06.jpg"
+                      alt="Imagem card Chá de panela"
+                    />
+                    Chá de panela
+                  </label>
+
+                  <input type="radio" name="teme" id="teme7" />
+                  <label for="teme7" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-07.jpg"
+                      alt="Imagem card Carnaval"
+                    />
+                    Carnaval
+                  </label>
+
+                  <input type="radio" name="teme" id="teme8" />
+                  <label for="teme8" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-08.jpg"
+                      alt="Imagem card Páscoa"
+                    />
+                    Páscoa
+                  </label>
+
+                  <input type="radio" name="teme" id="teme9" />
+                  <label for="teme9" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-09.jpg"
+                      alt="Imagem card São João"
+                    />
+                    São João
+                  </label>
+
+                  <input type="radio" name="teme" id="teme10" />
+                  <label for="teme10" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-10.jpg"
+                      alt="Imagem card Halloween"
+                    />
+                    Halloween
+                  </label>
+
+                  <input type="radio" name="teme" id="teme11" />
+                  <label for="teme11" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-11.jpg"
+                      alt="Imagem card Natal"
+                    />
+                    Natal
+                  </label>
+
+                  <input type="radio" name="teme" id="teme12" />
+                  <label for="teme12" class="teme">
+                    <img
+                      src="./styles/assets/image/Image-12.jpg"
+                      alt="Imagem card Outro"
+                    />
+                    Outro
+                  </label>
+                </div>
+              </div>
+
+              <div class="file-wrapper flex">
+                <div>
+                  <label for="">Estilo</label>
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+
+                <div>
+                  <label for="file">Foto de capa</label>
+                  <div class="file">
+                    <input type="file" name="Selecionar" id="file" />
+                    <label for="file" class="file-button">
+                      <svg
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.14645 1.64645C8.34171 1.45118 8.65829 1.45118 8.85355 1.64645L12.1869 4.97978C12.3821 5.17504 12.3821 5.49162 12.1869 5.68689C11.9916 5.88215 11.675 5.88215 11.4798 5.68689L9 3.20711V10C9 10.2761 8.77614 10.5 8.5 10.5C8.22386 10.5 8 10.2761 8 10V3.20711L5.52022 5.68689C5.32496 5.88215 5.00838 5.88215 4.81311 5.68689C4.61785 5.49162 4.61785 5.17504 4.81311 4.97978L8.14645 1.64645ZM2.5 9.5C2.77614 9.5 3 9.72386 3 10V12.6667C3 12.8877 3.0878 13.0996 3.24408 13.2559C3.40036 13.4122 3.61232 13.5 3.83333 13.5H13.1667C13.3877 13.5 13.5996 13.4122 13.7559 13.2559C13.9122 13.0996 14 12.8877 14 12.6667V10C14 9.72386 14.2239 9.5 14.5 9.5C14.7761 9.5 15 9.72386 15 10V12.6667C15 13.1529 14.8068 13.6192 14.463 13.963C14.1192 14.3068 13.6529 14.5 13.1667 14.5H3.83333C3.3471 14.5 2.88079 14.3068 2.53697 13.963C2.19315 13.6192 2 13.1529 2 12.6667V10C2 9.72386 2.22386 9.5 2.5 9.5Z"
+                          fill="#59B2FF"
+                        />
+                      </svg>
+
+                      Selecionar
+                    </label>
+                  </div>
                 </div>
               </div>
             </fieldset>

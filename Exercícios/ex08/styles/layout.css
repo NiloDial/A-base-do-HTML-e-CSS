@@ -40,9 +40,9 @@ main {
     margin: auto;
     max-width: 35rem;
     padding: 5rem 0 5rem;
+  }
 
-    h1 {
-      padding-bottom: 2.5rem;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
