@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /*CORES*/
+
+  /*Produto*/
+  --brand-gradient: ;
+  --brand-color-primary: #f7b733;
+  --brand-color-secondary: #fc4a1a;
+
+  /*Base*/
+  --background-color: #09090b;
+  --surface-color: #18181b;
+  --stroke-color: #27272a;
+  --text-color-secondary: #a1a1aa;
+  --text-color-primary: #f4f4f5;
+
+  /*FONTES*/
+  --font-family: "Inter", sans-serif;
+
+  /*Desktop*/
+  --h1: 800 4.25rem/120% var(--font-family);
+  --h2: 800 3rem/120% var(--font-family);
+  --h3: 800 2rem/120% var(--font-family);
+  --span: 500 0.875rem/100% var(--font-family);
+  --paragraph: 400 1rem/160% var(--font-family);
+
+  /*Mobile*/
+  --mh1: 800 2.5rem/120% var(--font-family);
+  --mh2: 800 1.5rem/120% var(--font-family);
+  --mh3: 800 1.25rem/120% var(--font-family);
+  --mspan: 500 0.875rem/100% var(--font-family);
+  --mparagraph: 400 1rem/160% var(--font-family);
+
+  /*Espaçamentos container*/
+  --py-base: 1rem;
+  --px-lg: 1.5rem;
+  --py-xl: 3rem;
+  --px-lg: 1.5rem;
+}
+
+html {
+  font: var(--paragraph);
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.04em;
+  color: var(--text-color-primary);
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+@media (width < 80em) {
+  h1 {
+    font: var(--mh1);
+  }
+
+  h2 {
+    font: var(--mh2);
+  }
+
+  h3 {
+    font: var(--mh3);
+  }
+}
+
+@media (width >= 80em) {
+  :root {
+    --py-base: 1.5rem;
+    --px-lg: 2.5rem;
+    --py-xl: 5rem;
+    --px-lg: 2rem;
+  }
+}
