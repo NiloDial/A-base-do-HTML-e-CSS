@@ -74,4 +74,23 @@ legend {
   color: var(--text-heading);
   padding: 12px 10px;
   background-color: var(--shape-button);
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+}
+
+input {
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font: var(--xs);
+    color: var(--danger);
+    margin-top: 0.25rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
 }

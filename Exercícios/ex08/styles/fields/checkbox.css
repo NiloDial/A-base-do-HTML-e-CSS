@@ -45,3 +45,38 @@ input:checked + .slider:before {
   transform: translateX(30px);
   background-color: white;
 }
+
+.terms-wrapper {
+  margin-top: 4px;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+
+  & span {
+    font: var(--sms);
+    color: var(--brand-light);
+    text-decoration: underline;
+  }
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+
+    background-image: url(../assets/icons/Checked-disable.svg);
+    background-repeat: no-repeat;
+  }
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(../assets/icons/Checked-checked.svg);
+  }
+}

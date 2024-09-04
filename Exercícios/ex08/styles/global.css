@@ -139,3 +139,9 @@ h2 {
 .pb-28 {
   padding-bottom: 1.75rem;
 }
+
+.diviser {
+  height: 1px;
+  margin-bottom: 2.5rem;
+  background-color: var(--input-stroke);
+}

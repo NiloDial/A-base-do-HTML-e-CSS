@@ -342,7 +342,12 @@
                 <div>
                   <label for="file">Foto de capa</label>
                   <div class="file">
-                    <input type="file" name="Selecionar" id="file" />
+                    <input
+                      type="file"
+                      name="Selecionar"
+                      id="file"
+                      accept=".doc"
+                    />
                     <label for="file" class="file-button">
                       <svg
                         width="17"
@@ -365,6 +370,93 @@
                 </div>
               </div>
             </fieldset>
+
+            <div class="pb-48"></div>
+
+            <div class="head">
+              <img
+                src="./styles/assets/icons/contact.svg"
+                alt="ícone de contato"
+              />
+              <h2>Dados para contato</h2>
+            </div>
+
+            <fieldset class="contact">
+              <div class="contact-wrapper">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <img
+                    src="./styles/assets/icons/alert-circle.svg"
+                    alt="ícone de alerta"
+                  />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+
+              <div class="flex gap-16">
+                <div class="email-wrapper flex-1">
+                  <label for="mail">E-mail</label>
+                  <input
+                    type="email"
+                    id="mail"
+                    placeholder="exemplo@email.com"
+                  />
+                </div>
+
+                <div class="cell-warraper flex-1">
+                  <label for="cell">Telefone</label>
+                  <input type="tel" id="cell" placeholder="(99) 99999-9999 " />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="term">
+              <div>
+                <div class="diviser"></div>
+                <div class="terms-wrapper checkbox-wrapper">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms">
+                    Li e concordo com os <span>Termos e Condições</span> e com a
+                    <span>Política de Privacidade</span>
+                  </label>
+                </div>
+
+                <div class="terms-wrapper checkbox-wrapper">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms">
+                    Aceito receber atualizações e promoções por e-mail
+                  </label>
+                </div>
+
+                <div class="terms-wrapper checkbox-wrapper">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms">
+                    Aceito receber atualizações e promoções por SMS
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="pb-48"></div>
+
+            <div class="action-wrapper">
+              <button class="btn-primary" type="submit">
+                <img
+                  src="./styles/assets/icons/ticket.svg"
+                  alt="ícone de Ticket"
+                />
+                Gerar convite
+              </button>
+            </div>
           </form>
         </div>
       </main>
