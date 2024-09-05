@@ -1,0 +1,11 @@
+#about {
+  background-color: var(--surface-color);
+
+  & img {
+    width: 34rem;
+  }
+
+  & .even-colums {
+    gap: 2rem;
+  }
+}

@@ -49,16 +49,20 @@
   --py-base: 1rem;
   --px-lg: 1.5rem;
   --py-xl: 3rem;
-  --px-lg: 1.5rem;
+  --py-lg: 1.5rem;
 }
 
 html {
   font: var(--paragraph);
   color: var(--text-color-primary);
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -99,6 +103,11 @@ a:hover {
 
 ul[role="list"] {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
 }
 
 @media (width < 80em) {
