@@ -47,5 +47,5 @@ a:hover {
 }
 
 .desktop-only {
-  display: none;
+  display: contents;
 }

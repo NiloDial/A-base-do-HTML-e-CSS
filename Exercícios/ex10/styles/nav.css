@@ -30,4 +30,8 @@ nav ul li:last-child img {
   & .container {
     padding-inline: 16px;
   }
+
+  & .desktop-only {
+    display: none;
+  }
 }
