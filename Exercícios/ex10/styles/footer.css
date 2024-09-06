@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  padding-block: 24px;
+  gap: 24px;
+  font: 14px/150% var(--font-family);
+
+  & .legal {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+footer span:nth-child(1) {
+  margin-right: auto;
+}
+
+@media (width <= 25em) {
+  footer {
+    padding-bottom: 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer span:nth-child(1) {
+    margin: auto;
+  }
+}
