@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+
+  /* Brand */
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+
+  /* Text */
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+
+  /* Surface */
+  --surface-primary: #ffffff;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
+
+  /* Stroke */
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
+
+  /* Semantic */
+  --semantic-error: #dc2626;
+
+  /* Supporting */
+  --orange: #f9a474;
+  --yellow: #fedf6f;
+  --green: #c7d78d;
+  --blue: #b8cedc;
+  --violet: #c3b2e7;
+  --pink: #f682a5;
+
+  /* FONTS */
+
+  --font-family: "Roboto Condensed", sans-serif;
+  --text: 400 1rem/1.5 var(--font-family);
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+  --h1: 700 32px/120% var(--font-family);
+  --h2: 700 24px/120% var(--font-family);
+  --h3: 700 20px/120% var(--font-family);
+  --h4: 700 16px/120% var(--font-family);
+}
+
+h1 {
+  font: var(--h1);
+  color: var(--text-primary);
+}
+
+h2 {
+  font: var(--h2);
+  color: var(--text-primary);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+body {
+  overflow: hidden;
+  color: var(--text-secondary);
+  font: var(--text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.desktop-only {
+  display: inherit;
+}
