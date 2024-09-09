@@ -75,3 +75,8 @@ h2 {
 .more {
   font: var(--more);
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
