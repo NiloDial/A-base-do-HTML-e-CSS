@@ -1,0 +1,32 @@
+#hero {
+  background-color: var(--shape-background);
+
+  & header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+
+    & img {
+      width: 14.375rem;
+      object-fit: cover;
+    }
+  }
+
+  & .title {
+    & h1 {
+      color: var(--text-title);
+    }
+
+    & p {
+      font: var(--r-body-lg);
+      color: var(--text-body);
+    }
+  }
+
+  & .message {
+    & p {
+      font: var(--subtitle);
+      color: var(--text-body);
+    }
+  }
+}

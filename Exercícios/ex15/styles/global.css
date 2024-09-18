@@ -59,10 +59,26 @@
   --button: 700 0.875rem var(--font-family);
 
   /*Link*/
-  --button: 500 0.875rem var(--font-family);
+  --l-button: 500 0.875rem var(--font-family);
 
   /*Tag*/
   --tag: 700 0.625rem var(--font-family);
+}
+
+.container {
+  margin: auto;
+  max-width: 70rem;
+}
+
+button {
+  font: var(--button);
+  color: var(--text-title);
+  background-color: var(--pink-dark);
+  border-radius: 0.5rem;
+  border: none;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  height: fit-content;
 }
 
 h1 {
