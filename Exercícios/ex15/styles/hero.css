@@ -1,7 +1,12 @@
 #hero {
   background-color: var(--shape-background);
+  background: url(../assets/background/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
 
   & header {
+    width: 70rem;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 3.5rem;
@@ -12,9 +17,22 @@
     }
   }
 
+  & .hero-box {
+    background: url(../assets/background/bg-hero-book2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
   & .title {
+    width: 41rem;
+    margin: auto;
+    text-align: center;
+    padding-block: 10.25rem 29.375rem;
+
     & h1 {
       color: var(--text-title);
+      margin-bottom: 2rem;
     }
 
     & p {
@@ -24,9 +42,41 @@
   }
 
   & .message {
+    width: 75rem;
+    padding-block: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    & img[src*="opened"] {
+      margin: auto;
+      width: 5rem;
+      transform: rotate(20deg);
+    }
+
+    & img[src*="ouija"] {
+      width: 5rem;
+      transform: rotate(99deg);
+    }
+
+    & img[src*="crystal"] {
+      width: 4.5rem;
+      transform: rotate(-14deg);
+    }
+
+    & .message-img {
+      display: flex;
+      justify-content: space-between;
+    }
+
     & p {
+      text-align: center;
       font: var(--subtitle);
       color: var(--text-body);
+
+      & span {
+        color: var(--blue-light);
+        font: var(--b-subtitle);
+      }
     }
   }
 }

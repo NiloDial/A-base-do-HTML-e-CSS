@@ -42,6 +42,7 @@
 
   /*Subtitle*/
   --subtitle: 500 2rem/200% var(--font-family);
+  --b-subtitle: 700 2rem/200% var(--font-family);
 
   /*Body Regular*/
   --r-body-lg: 400 1.25rem/140% var(--font-family);
