@@ -1,0 +1,69 @@
+#book {
+  background-color: var(--shape-background);
+  padding-bottom: 6.25rem;
+
+  & .title {
+    width: 41rem;
+    margin: auto;
+    text-align: center;
+    padding-block: 6.25rem 3.125rem;
+
+    div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding-bottom: 0.3125rem;
+      justify-content: center;
+    }
+
+    & h3 {
+      color: var(--text-title);
+    }
+
+    & p {
+      font: var(--r-body-md);
+      color: var(--text-body);
+    }
+  }
+
+  & .book-animation {
+    & .base {
+      display: flex;
+      justify-content: center;
+
+      position: relative;
+
+      & .book {
+        & img {
+          z-index: 2;
+          margin: auto;
+          width: 29.1875rem;
+        }
+      }
+
+      & .book-mark {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+
+        & img:nth-child(1) {
+          width: 10.75rem;
+        }
+
+        & img:nth-child(2) {
+          width: 10.75rem;
+        }
+      }
+
+      & .pin {
+        position: absolute;
+        z-index: 1;
+
+        & img {
+          margin: auto;
+          width: 13.875rem;
+        }
+      }
+    }
+  }
+}

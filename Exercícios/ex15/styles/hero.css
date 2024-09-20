@@ -1,6 +1,6 @@
 #hero {
   background-color: var(--shape-background);
-  background: url(../assets/background/hero-bg.jpg);
+  /*background: url(../assets/background/hero-bg.jpg);*/
   background-position: center;
   background-size: cover;
 

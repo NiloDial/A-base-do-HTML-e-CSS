@@ -1,0 +1,65 @@
+#price {
+  background-color: var(--shape-background);
+
+  & .title {
+    width: 41rem;
+    margin: auto;
+    text-align: center;
+    padding-block: 6.25rem 3.125rem;
+
+    & h3 {
+      color: var(--text-title);
+    }
+  }
+
+  & .price-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  & .card {
+    background-color: var(--shape-base);
+    border: var(--shape-stroke);
+    border-radius: 1.5rem;
+    padding: 2rem 2rem 1.75rem 2rem;
+
+    & .head {
+      h4 {
+        color: var(--blue-light);
+      }
+
+      & div:nth-child(1) {
+        padding-bottom: 1.5rem;
+      }
+
+      & div:nth-child(2) {
+        & p:nth-child(1) {
+          font: var(--title-md);
+          color: var(--text-title);
+          padding-bottom: 0.5rem;
+
+          & span {
+            font: var(--title-xs);
+          }
+        }
+
+        & p:nth-child(2) {
+          font: var(--r-body-sm);
+          color: var(--text-label);
+        }
+      }
+    }
+  }
+
+  & .benefit {
+    color: var(--text-body);
+    font: var(--r-body-xs);
+    display: flex;
+    gap: 0.5rem;
+
+    & img {
+      width: 0.875rem;
+    }
+  }
+}

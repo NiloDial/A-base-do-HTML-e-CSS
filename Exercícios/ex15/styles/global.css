@@ -82,6 +82,17 @@ button {
   height: fit-content;
 }
 
+.button-secundary {
+  font: var(--button);
+  color: var(--text-title);
+  background-color: var(--blue-dark);
+  border-radius: 0.5rem;
+  border: none;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  height: fit-content;
+}
+
 h1 {
   font: var(--title-lg);
 }
