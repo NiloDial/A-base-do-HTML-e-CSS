@@ -80,16 +80,30 @@ button {
   padding-block: 0.75rem;
   padding-inline: 1.25rem;
   height: fit-content;
+  cursor: pointer;
+  transition: background 0.5s;
+
+  &:hover {
+    background-color: #9547a5;
+  }
 }
 
 .button-secundary-blue {
   background-color: var(--blue-dark);
   width: 100%;
+
+  &:hover {
+    background-color: #2374a4;
+  }
 }
 
 .button-secundary-purple {
   background-color: var(--pink-dark);
   width: 100%;
+
+  &:hover {
+    background-color: #9547a5;
+  }
 }
 
 .purple {

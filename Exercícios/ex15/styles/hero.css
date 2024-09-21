@@ -5,6 +5,7 @@
   background-size: cover;
 
   & header {
+    animation: none;
     width: 70rem;
     margin: auto;
     display: flex;
@@ -12,6 +13,7 @@
     padding-top: 3.5rem;
 
     & img {
+      animation: none;
       width: 14.375rem;
       object-fit: cover;
     }
@@ -22,6 +24,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
+    animation: fadeIn 1.5s ease-in-out forwards; /* Aparece em 1.5s */
+    opacity: 0;
   }
 
   & .title {
@@ -33,11 +37,16 @@
     & h1 {
       color: var(--text-title);
       margin-bottom: 2rem;
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0;
     }
 
     & p {
       font: var(--r-body-lg);
       color: var(--text-body);
+      animation: fadeIn 1.5s ease-in-out forwards;
+      animation-delay: 1s; /* Atraso de 1s após o carregamento */
+      opacity: 0;
     }
   }
 
@@ -51,16 +60,52 @@
       margin: auto;
       width: 5rem;
       transform: rotate(20deg);
+
+      opacity: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
     }
 
     & img[src*="ouija"] {
       width: 5rem;
       transform: rotate(99deg);
+
+      opacity: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
     }
 
     & img[src*="crystal"] {
       width: 4.5rem;
+      height: 4.5rem;
       transform: rotate(-14deg);
+
+      opacity: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
+
+    &:hover p {
+      color: var(--text-body);
+      transition-delay: 0.3s; /* Delay de 0.5s antes de mudar a cor */
+    }
+
+    &:hover span {
+      color: var(--blue-light);
+      transition-delay: 0.5s; /* Delay de 0.5s antes de mudar a cor */
+    }
+
+    & img[src*="crystal"]:hover {
+      transform: rotate(-25deg) scale(1.2);
+    }
+
+    & img[src*="ouija"]:hover {
+      transform: rotate(120deg) scale(1.1);
+    }
+
+    & img[src*="opened"]:hover {
+      transform: rotate(35deg) scale(1.2);
     }
 
     & .message-img {
@@ -71,12 +116,27 @@
     & p {
       text-align: center;
       font: var(--subtitle);
-      color: var(--text-body);
+
+      color: #717779;
+      transition: color 0.5s ease;
 
       & span {
-        color: var(--blue-light);
+        color: #717779;
+        transition: color 0.5s ease;
         font: var(--b-subtitle);
       }
     }
+  }
+}
+
+/* Animação básica para aparecer gradualmente */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Opcional: leve movimento para cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
