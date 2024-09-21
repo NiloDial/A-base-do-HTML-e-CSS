@@ -82,15 +82,22 @@ button {
   height: fit-content;
 }
 
-.button-secundary {
-  font: var(--button);
-  color: var(--text-title);
+.button-secundary-blue {
   background-color: var(--blue-dark);
-  border-radius: 0.5rem;
-  border: none;
-  padding-block: 0.75rem;
-  padding-inline: 1.25rem;
-  height: fit-content;
+  width: 100%;
+}
+
+.button-secundary-purple {
+  background-color: var(--pink-dark);
+  width: 100%;
+}
+
+.purple {
+  color: var(--pink-light);
+}
+
+.blue {
+  color: var(--blue-light);
 }
 
 h1 {
