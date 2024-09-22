@@ -256,7 +256,7 @@ Cor
 
 `background-color` | Adiciona uma cor de fundo.
 
-![ex1.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/aa3bda91-87fd-408e-b364-e7911182addf/ex1.png)
+![ex2.png](https://i.ibb.co/wzDngrb/img-1.png)
 
 > Confira o exercício 02 em Base do CSS > ex02.
 
