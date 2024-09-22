@@ -1,0 +1,286 @@
+#book {
+  background-color: var(--shape-background);
+  padding-bottom: 6.25rem;
+
+  & .title {
+    width: 41rem;
+    margin: auto;
+    text-align: center;
+    padding-block: 6.25rem 6.25rem;
+
+    & div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding-bottom: 0.3125rem;
+      justify-content: center;
+    }
+
+    & h3 {
+      color: var(--text-title);
+    }
+
+    & p {
+      font: var(--r-body-md);
+      color: var(--text-body);
+    }
+  }
+
+  & .book-animation {
+    & .base {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      width: 29.1875rem;
+
+      position: relative;
+
+      & .book {
+        z-index: 2;
+        & img {
+          margin: auto;
+          width: 29.1875rem;
+        }
+      }
+
+      /*Animação Mark entrada*/
+      &:hover .book-mark {
+        & img {
+          animation: Mark 0.5s forwards ease;
+
+          &:nth-child(1) {
+            margin-top: 50px;
+            margin-right: -100px;
+            rotate: 10deg;
+            transition: 0.5s ease;
+          }
+
+          &:nth-child(2) {
+            rotate: 2deg;
+            transition: 0.5s ease;
+          }
+        }
+
+        & .text-mark {
+          & img {
+            bottom: -12rem;
+            right: 3rem;
+
+            rotate: 0deg;
+          }
+        }
+      }
+
+      /*Animação Mark saída*/
+      & .book-mark {
+        & img {
+          animation: returnMark 0.5s forwards; /* Animação de retorno da imagem 2 */
+
+          &:nth-child(1) {
+            margin-top: 0;
+            rotate: 0deg;
+            transition: 0.5s ease;
+          }
+
+          &:nth-child(2) {
+            rotate: 0deg;
+            transition: 0.5s ease;
+          }
+        }
+      }
+
+      /*Animação Pin entrada*/
+      &:hover .pin img {
+        animation: Pin 0.5s forwards ease;
+
+        &:nth-child(1) {
+          margin-left: -100px;
+          margin-bottom: -50px;
+          transition: 0.5s ease;
+        }
+      }
+
+      /*Animação Pin saída*/
+      & .pin img {
+        animation: returnPin 0.5s forwards; /* Animação de retorno da imagem 2 */
+
+        &:nth-child(1) {
+          margin-left: 0;
+          margin-bottom: 0;
+          transition: 0.5s ease;
+        }
+      }
+
+      /*Animação Text-cover entrada*/
+      &:hover .text-cover img {
+        animation: Text-cover 0.5s forwards ease;
+      }
+
+      /*Animação Text-cover saída*/
+      & .text-cover img {
+        animation: returnText-cover 0.5s forwards; /* Animação de retorno da imagem 2 */
+      }
+
+      /*Base Texts*/
+      & .text-cover {
+        z-index: 1;
+        position: absolute;
+        width: 15.875rem;
+        top: 1rem;
+        left: 2.7rem;
+      }
+
+      /*Base Mark*/
+      & .book-mark {
+        display: flex;
+        position: absolute;
+        z-index: 1;
+
+        top: 1rem;
+        right: 0;
+
+        & img:nth-child(1) {
+          width: 10.75rem;
+          height: 33.5rem;
+        }
+
+        & img:nth-child(2) {
+          margin-left: -11rem;
+          width: 10.75rem;
+          height: 33.5rem;
+        }
+
+        & .text-mark {
+          & img {
+            width: 14.625rem;
+            height: 11.9375rem;
+            position: absolute;
+            bottom: -2rem;
+            right: 1rem;
+          }
+        }
+      }
+
+      /*Base Pin*/
+      & .pin {
+        position: absolute;
+        z-index: 1;
+
+        bottom: 2rem;
+        left: 1.2rem;
+
+        & .text-pin {
+          & img {
+            margin-left: 2rem;
+            width: 7.875rem;
+          }
+        }
+
+        & img {
+          margin: auto;
+          width: 13.875rem;
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 25em) {
+  #book {
+    & .title {
+      width: 100%;
+      padding-inline: 2rem;
+      padding-block: 6rem 4rem;
+
+      & div {
+        gap: 0.75rem;
+        padding-bottom: 0.5rem;
+
+        & img {
+          width: 1.25rem;
+        }
+      }
+
+      & h3 {
+        font: 700 1.5rem var(--font-family);
+        color: var(--text-title);
+      }
+
+      & p {
+        font: 400 0.875rem/140% var(--font-family);
+        color: var(--text-body);
+      }
+    }
+
+    & .book-animation {
+      & .base {
+        width: 100%;
+      }
+    }
+
+    & .book-mobile {
+      width: 100%;
+      text-align: center;
+    }
+
+    & .only-mobile {
+      display: block;
+    }
+
+    & .only-desktop {
+      display: none;
+    }
+  }
+}
+
+@keyframes Mark {
+  0% {
+  }
+  100% {
+    transform: translate(130px, -100px) rotate(10deg); /* Desliza para a direita */
+    opacity: 1; /* Visível no final */
+  }
+}
+
+@keyframes returnMark {
+  0% {
+    transform: translate(130px, -100px) rotate(10deg); /* Posição final */
+  }
+  100% {
+    transform: translate(0) rotate(0deg); /* Volta para o centro */
+  }
+}
+
+@keyframes Pin {
+  0% {
+  }
+  100% {
+    transform: translate(-150px, 130px) rotate(-10deg); /* Saindo para a esquerda */
+  }
+}
+
+@keyframes returnPin {
+  0% {
+    transform: translate(-150px, 130px) rotate(-10deg); /* Saindo para a esquerda */
+  }
+  100% {
+    transform: translate(0) rotate(0deg); /* Volta para o centro */
+  }
+}
+
+@keyframes Text-cover {
+  0% {
+  }
+  100% {
+    transform: translate(-260px, -80px) rotate(-5deg); /* Saindo para a esquerda */
+  }
+}
+
+@keyframes returnText-cover {
+  0% {
+    transform: translate(-260px, -80px) rotate(-5deg); /* Saindo para a esquerda */
+  }
+  100% {
+    transform: translate(0) rotate(0deg); /* Volta para o centro */
+  }
+}

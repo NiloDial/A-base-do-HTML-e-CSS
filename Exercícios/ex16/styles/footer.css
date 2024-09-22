@@ -1,0 +1,102 @@
+footer {
+  background-color: var(--shape-background);
+
+  & .footer-bg {
+    padding-block: 10.625rem 6.25rem;
+    background: url(../assets/images/book-trace-background.png);
+    background-position: top center;
+    background-size: cover;
+  }
+
+  & div:nth-child(1) {
+    & .line {
+      height: 1px;
+      width: 100%;
+      margin-block: 0.75rem;
+      background-color: var(--shape-stroke);
+    }
+
+    & .social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & a {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        transition: background-color 0.5s;
+      }
+
+      & a svg {
+        & path {
+          fill: var(--blue-light);
+        }
+      }
+
+      & a:hover {
+        vertical-align: middle;
+        border-radius: 50%;
+        background-color: var(--shape-stroke);
+
+        & svg path {
+          fill: var(--text-body);
+        }
+      }
+    }
+  }
+
+  & .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .links {
+    font: var(--l-button);
+    color: var(--blue-light);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    cursor: pointer;
+
+    & p:hover {
+      color: var(--text-body);
+    }
+  }
+
+  & .head-link {
+    font: var(--title-xs);
+    color: var(--text-body);
+    padding-bottom: 1.25rem;
+  }
+
+  & .links-wrap {
+    display: flex;
+    gap: 3.5rem;
+  }
+}
+
+@media (width <= 25em) {
+  footer {
+    & .footer-wrap {
+      padding-inline: 2rem;
+      flex-direction: column;
+
+      & div {
+        & img:nth-child(1) {
+          display: flex;
+          margin: auto;
+        }
+      }
+
+      & .links-wrap {
+        padding-top: 2.5rem;
+        justify-content: space-between;
+      }
+    }
+  }
+}
