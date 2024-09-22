@@ -293,7 +293,7 @@ E usamos essa variável assim:
 
 `}` 
 
-![ex2.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/775559d0-50e5-4ade-aaa5-ac7b9c706789/ex2.png)
+![ex3.png](https://i.ibb.co/6rnSkFk/img-2.png)
 
 > Confira o exercício 03 em Base do CSS > ex03
 
@@ -310,7 +310,7 @@ Um pseudo-elements CSS é uma palavra-chave adicionada a um seletor que permite
 
 Usamos o Flexbox para conseguir manipular mais facilmente os elementos, por padrão o HTML coloca os elementos em blocos, um em baixo do outro, com o Flexbox conseguimos manipular mais facilmente esses  elementos do tipo `block`, transformando em `Inline` , adicionar espaçamento entre os elementos e muito mais…
 
-![ex3-3.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/ed1d0151-4883-4033-b092-89303884752d/ex3-3.png)
+![ex4.png](https://i.ibb.co/yFYHZg5/img-3.png)
 
 > Confira o exercício 04 em FlexBox e Grid > ex04 
 
@@ -321,7 +321,7 @@ A base desse exercício foi o uso do FlexBox para conseguir organizar os element
 
  O Grid funciona de forma parecida com o FlexBox, mas com foco em colunas e linhas. O Grid é composto de 2 principais grupos, o container (pai) e os itens (filhos), ele funciona como se fosse uma tabela.
 
-![ex5.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/2796f857-cd79-4def-8081-c4ded8498e51/ex5.png)
+![ex5.png](https://i.ibb.co/4Rz5G8G/img-4.png)
 
 > Confira o exercício 05 em FlexBox e Grid > ex05.
 
@@ -332,7 +332,7 @@ O foco desse exercício foi usar o Grid para a construção do site de noticias,
 
 Não tem uma ferramenta melhor que a outra, as duas ferramentas servem para manipular e organizar elementos em mais de uma direção na sua página, vai ter casos onde o Grid funciona melhor e outros casos onde o FlexBox funciona melhor, tudo vai depender da facilidade de aplicação dentro de determinada situação no design da página, na maioria das vezes vamos acabar usando os dois na mesma página… Existem muitos atributos para o FlexBox e Grid, então é recomendado analisar os exercícios para ver cada atributo e sua funcionalidades, no exercício 06 por exemplo, usei FlexBox para fazer as tags de tecnologias na sessão “home” e usei Grid para montar os cards da sessão “Meu trabalho”…
 
-![ex6.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/6bbee16d-a70b-41e6-9a79-9a6186e86f08/ex6.png)
+![ex6.png](https://i.ibb.co/HzzB3GF/img-5.png)
 
 > Confira o exercício 06 em FlexBox e Grid > ex06.
 
@@ -435,14 +435,14 @@ Select serve para selecionar valores, podemos configurar para ser possível sele
 
 Permite fazer agrupamento de inputs, útil para separar partes diferentes de um formulário muito grande.
 
-![estrelas-do-amanha.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/ff72deee-2dc3-4438-b58d-9fe7ce56fb05/estrelas-do-amanha.png)
+![ex07.png](https://i.ibb.co/tMF0d6w/img-6.png)
 
 > Confira o exercício 07 em Formulários > ex07.
 
 Nesse exercício praticamente usamos todos os conhecimentos que adquirirmos anteriormente, mas o foco aqui é o uso dos elementos do HTML direcionados para os formulários, usamos os inputs principais que a maioria dos formulários tem.
 > 
 
-![Image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/3c9bec77-8fe9-451a-8f24-9c01c16f6926/Image.png)
+![ex08.png](https://i.ibb.co/Hh5VCR8/img-7.png)
 
 > Confira o exercício 08 em Formulários > ex08.
 
@@ -507,28 +507,28 @@ O CSS Media Queries é uma ferramenta que permite adaptar o design de uma págin
 
 Para ativar os elementos de responsividade usamos os breakpoints, que funcionam como gatilhos para ativar a mudança no layout, exemplo, usamos a medida de `width: 500px` para trocar a cor de fundo da página, quando a página chegar no tamanho de 500px de largura a cor vai ser trocada.  Normalmente usamos esses gatilhos para trocar o tamanho dos elementos do site, para que se encaixem em diferentes tamanhos de telas. Um exemplo real dessa aplicação é colocar o breakpoint na largura de 500px, e usar isso como gatilho para o titulo da página ficar com a fonte menor e ter uma leitura mais tranquila para quer acessar o site pelo celular.
 
-![Image-0.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/f4c71571-fa87-4ca7-a891-3f0665d63d68/Image-0.png)
+![ex09.png](https://i.ibb.co/SJFPW7N/img-8.png)
 
 > Confira o exercício 09 em Responsividade > ex09.
 
 Nesse exercício usamos os conceitos básicos de responsividade, criamos o site base, o projeto Zingen e deixamos ele responsivo para os celulares, fizemos um recurso bem interessante nos botões, colocamos gradiente em botões com bordar arredondadas (Não é possível fazer isso “nativamente” no CSS).
 > 
 
-![Image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/b357b0be-9f35-4b60-825a-62fc91fcf371/Image.png)
+![ex10.png](https://i.ibb.co/f1X53Gw/img-9.png)
 
 > Confira o exercício 10 em Responsividade > ex10.
 
 O objetivo desse exercício foi deixar o projeto Travelgram responsivo para dispositivos mobile.
 > 
 
-![Image-2.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/08c8fdd7-5832-43f0-835c-60903d3cba44/Image-2.png)
+![ex11.png](https://i.ibb.co/KN4C2sj/img-10.png)
 
 > Confira o exercício 11 em Responsividade > ex11.
 
 O objetivo desse exercício foi deixar o projeto Tech News responsivo para dispositivos mobile.
 > 
 
-![Image-3.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/6ff33b47-0cd4-45ae-8d4d-1152e6b675e4/Image-3.png)
+![ex12.png](https://i.ibb.co/CmpDKXq/img-11.png)
 
 > Confira o exercício 12 em Responsividade > ex12.
 
@@ -600,21 +600,21 @@ Colocamos dentro da estilização do elemento:
 
 As animações estão ficando cada vez mais completas no CSS, mas nem todas são compatíveis com todos os navegadores, então é sempre interessante pesquisar na documentação a disponibilidade dessas animações e até mesmo pesquisar novos recursos de animação.
 
-![Image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/bec75591-5206-45bb-88e3-cb1f4a7cc124/Image.png)
+![ex13.png](https://i.ibb.co/qRgLSpy/img-12.png)
 
 > Confira o exercício 13 em Animation e Transition > ex13.
 
 Aqui começamos a fazer nossas primeiras animações e transições, criamos recursos bem legais como a entrada da imagem na hero, barra escrolando o nome “Patins” em um background mudando de cor e muito mais.
 > 
 
-![Image-cel.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/3e857034-9b44-43b2-9dd8-22ed6061743e/Image-cel.png)
+![ex14.png](https://i.ibb.co/zh2syr0/img-13.png)
 
 > Confira o exercício 14 em Animation e Transition > ex14.
 
 Nesse exercício pegamos o projeto e deixamos responsivo para a visualização mobile.
 > 
 
-![Image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/4792a8f7-0e83-47bc-8ad0-a7e45310402d/6d756123-25a9-4435-9f3a-e8117764320b/Image.png)
+![ex15.png](https://i.ibb.co/tZ7JNT4/img-14.png)
 
 > Confira o exercício 15 em Animation e Transition > ex15.
 
